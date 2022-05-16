@@ -1,32 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import { Header, Footer, Project } from './components';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Project from './components/Project';
 
 function App() {
+  const [pageSelected, setPageSelected] = useState('about');
+  
   return (
     <>
-      <Header></Header>
+      <Header
+        setPageSelected={setPageSelected}
+      ></Header>
       <main>
-        {aboutSelected && (
-          <div>
+        {(pageSelected === 'about') && (
+          <div id='about'>
             <h2>About Me</h2>
             <p>I'm an aspiring computational linguist, and I am hoping to find some great programmers to learn from and collaborate with as I work on gaining real world coding experience. Right now, I'm looking into graduate school and trying to decide on a university that has a strong computational focus. I'm open to any advice and suggestions!</p>
           </div>
         )}
-        {portfolioSelected && (
-          <div>
-            <h2>Portfolio</h2>
-            <Project></Project>
-          </div>
+        {(pageSelected === 'portfolio') && (
+            <div id='portfolio'>
+              <h2>Portfolio</h2>
+              <Project></Project>
+            </div>
         )}
-        {contactSelected && (
-          <div>
+        {(pageSelected === 'contact') && (
+          <div id='contact'>
             <h2>Contact Me</h2>
           </div>
         )}
-        {resumeSelected && (
-          <div>
-            <h2>Resume</h2>
+        {(pageSelected === 'resume') && (
+          <div id='resume'>
+              <h2>Resume</h2>
           </div>
         )}
       </main>

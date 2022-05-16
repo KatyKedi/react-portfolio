@@ -1,40 +1,36 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
+    const {
+        setPageSelected
+    } = props;
 
-  return (
-    <header className="flex-row px-1">
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
-            </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-  );
+    return (
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about" onClick={() => setPageSelected('about')}>
+                        About me
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio" onClick={() => setPageSelected('portfolio')}>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" onClick={() => setPageSelected('contact')}>
+                        Contact Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#resume" onClick={() => setPageSelected('resume')}>
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    );
 }
 
 export default Nav;
