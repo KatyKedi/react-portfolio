@@ -7,38 +7,6 @@ import Contact from './components/Contact';
 
 function App() {
   const [pageSelected, setPageSelected] = useState('about');
-  const projects = [
-    {
-      name: 'Project',
-      img: './assets/img.png',
-      description: 'This is a project'
-    },
-    {
-      name: 'Project',
-      img: './assets/img.png',
-      description: 'This is a project'
-    },
-    {
-      name: 'Project',
-      img: './assets/img.png',
-      description: 'This is a project'
-    },
-    {
-      name: 'Project',
-      img: './assets/img.png',
-      description: 'This is a project'
-    },
-    {
-      name: 'Project',
-      img: './assets/img.png',
-      description: 'This is a project'
-    },
-    {
-      name: 'Project',
-      img: './assets/img.png',
-      description: 'This is a project'
-    }
-  ];
   
   return (
     <>
