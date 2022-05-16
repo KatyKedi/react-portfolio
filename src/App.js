@@ -1,11 +1,44 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Project from './components/Project';
+import Contact from './components/Contact';
 
 function App() {
   const [pageSelected, setPageSelected] = useState('about');
+  const projects = [
+    {
+      name: 'Project',
+      img: './assets/img.png',
+      description: 'This is a project'
+    },
+    {
+      name: 'Project',
+      img: './assets/img.png',
+      description: 'This is a project'
+    },
+    {
+      name: 'Project',
+      img: './assets/img.png',
+      description: 'This is a project'
+    },
+    {
+      name: 'Project',
+      img: './assets/img.png',
+      description: 'This is a project'
+    },
+    {
+      name: 'Project',
+      img: './assets/img.png',
+      description: 'This is a project'
+    },
+    {
+      name: 'Project',
+      img: './assets/img.png',
+      description: 'This is a project'
+    }
+  ];
   
   return (
     <>
@@ -26,9 +59,7 @@ function App() {
             </div>
         )}
         {(pageSelected === 'contact') && (
-          <div id='contact'>
-            <h2>Contact Me</h2>
-          </div>
+          <Contact></Contact>
         )}
         {(pageSelected === 'resume') && (
           <div id='resume'>
