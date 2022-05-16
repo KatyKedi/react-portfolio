@@ -64,6 +64,19 @@ function App() {
         {(pageSelected === 'resume') && (
           <div id='resume'>
               <h2>Resume</h2>
+              <ul>Skills
+                <li>Analytical skills in phonetics, phonology, morphology, syntax, and historical linguistics.</li>
+                <li>Skills in HTML/CSS, JavaScript, Python, ELAN, Praat, and Rezonator</li>
+              </ul>
+              <ul>Research History
+                <li>Worked under the direction of graduate student Jordan Douglas-Tavani and transcribed works of a field linguist into the international phonetic alphabet</li>
+                <li>Worked under the direction of graduate student Chadi Ben Youssef and used ELAN to transcribe chunks of audio data in English, including notes accounting for pauses and intonation</li>
+              </ul>
+              <ul>Education
+                <li>Coding Bootcamp: University of California, Davis | In progress</li>
+                <li>Bachelor of Arts: Linguistics | GPA: 3.83 | University of California, Santa Barbara | Santa Barbara, CA | June 2020</li>
+                <li>Associate of Arts: Language Studies | GPA: 3.71 | American River College | Sacramento, CA | June 2018</li>
+              </ul>
           </div>
         )}
       </main>
