@@ -47,18 +47,22 @@ const projects = [
 
 function Project() {
     return (
-        <div>
+        <div id="projects">
             {projects.map((project, index) => (
-                <section key={index}>
+              <div class='project' key={index}>
+                <section>
                         <img 
                             src={project.img}
-                            alt={project.title + ' image'} 
-                            className="img-thumbnail mx-1"
+                            alt={project.title + ' image'}
+                            className='img-thumbnail'
                             onClick={() =>  window.open(project.link)}
                             key={index}>
                         </img>
-                    <a href={project.repo}>Repo</a>
+                        <div class='project-text'>
+                          <a href={project.repo}>{project.title} Repo</a>
+                        </div>
                 </section>
+              </div>
             ))}
         </div>
     )

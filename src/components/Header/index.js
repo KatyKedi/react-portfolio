@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Nav from '../Nav/index';
+import avatar from '../../assets/avatar.png';
 
 function Header(props) {
     const {
@@ -7,10 +8,13 @@ function Header(props) {
     } = props;
     return (
         <header>
-            <h1>Katy Vincent</h1>
             <Nav
                 setPageSelected={setPageSelected}
             ></Nav>
+            <div id='profile'>
+                <h1>Katy Vincent</h1>
+                <img src={avatar} alt='avatar'></img>
+            </div>
         </header>
     );
 }

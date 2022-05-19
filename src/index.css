@@ -1,27 +1,17 @@
-body {
+* {
+  text-align: center;
   margin: 0;
-  height: 100vh;
-  font-weight: 100;
+  padding: 0;
   color: white;
+}
+
+body {
   background: radial-gradient(#a23982,#1f1013);
-  -webkit-overflow-Y: hidden;
-  -moz-overflow-Y: hidden;
-  -o-overflow-Y: hidden;
-  overflow-y: hidden;
   -webkit-animation: fadeIn 1 1s ease-out;
   -moz-animation: fadeIn 1 1s ease-out;
   -o-animation: fadeIn 1 1s ease-out;
   animation: fadeIn 1 1s ease-out;
-}
-
-button:hover{
-border: 2px solid #104F55;
-background-color: rgba(365,365,365,0.5);
-cursor: pointer;
-color: #104F55;
-opacity: .8;
-transition: .3s;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  font-size: 3em;
 }
 
 .light {
@@ -145,10 +135,6 @@ transform: scale(0.9);
 left: 85%;
 }
 
-button:focus{
-outline: none;
-}
-
 @-webkit-keyframes floatUp{
 0%{top: 100vh; opacity: 0;}
 25%{opacity: 1;}
@@ -176,17 +162,6 @@ outline: none;
 50%{top: 0vh; opacity: .8;}
 75%{opacity: 1;}
 100%{top: -100vh; opacity: 0;}
-}
-
-.header{
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-family: 'Roboto', sans-serif;
-font-weight: 200;
-color: white;
-font-size: 2em;
 }
 
 #head1, #head2,#head3, #head4, #head5{
@@ -322,15 +297,4 @@ to{opacity: 1;}
 30%{opacity: 1;}
 80%{opacity: .9;}
 100%{opacity: 1;}
-}
-
-#footer{
-font-family: 'Roboto', sans-serif;
-font-size: 1.2em;
-color: white;
-position: fixed;
--webkit-transform: translate(95vw,90vh);
--moz-transform: translate(95vw,90vh);
-transform: translate(95vw,90vh);
-transform: translate(95vw,90vh);
 }

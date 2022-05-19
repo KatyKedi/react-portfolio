@@ -36,8 +36,6 @@ function Contact() {
     };
     
     return (
-        <div id='contact'>
-            <h2>Contact Me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name">Name:</label>
@@ -58,7 +56,6 @@ function Contact() {
               )}
               <button id="button" type="submit">Submit</button>
             </form>
-        </div>
 )}
 
 export default Contact;

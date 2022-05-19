@@ -16,7 +16,7 @@ function App() {
       <main>
         {(pageSelected === 'about') && (
           <div id='about'>
-            <h2>About Me</h2>
+            <h2 >About Me</h2>
             <p>I'm an aspiring computational linguist, and I am hoping to find some great programmers to learn from and collaborate with as I work on gaining real world coding experience. Right now, I'm looking into graduate school and trying to decide on a university that has a strong computational focus. I'm open to any advice and suggestions!</p>
           </div>
         )}
@@ -27,7 +27,10 @@ function App() {
             </div>
         )}
         {(pageSelected === 'contact') && (
-          <Contact></Contact>
+          <div id='contact'>
+            <h2>Contact Me</h2>
+            <Contact></Contact>
+          </div>
         )}
         {(pageSelected === 'resume') && (
           <div id='resume'>
