@@ -3,7 +3,7 @@ import image1 from '../../assets/code-quiz.png';
 import image2 from '../../assets/workday-scheduler.png';
 import image3 from '../../assets/note-taker.png';
 import image4 from '../../assets/budget-tracker.png';
-// import image5 from '../../assets/apex-losers.png';
+import image5 from '../../assets/apex-losers.png';
 import image6 from '../../assets/tft-compare.png';
 
 const projects = [
@@ -31,12 +31,12 @@ const projects = [
       link: 'https://budget-tracker-katykedi.herokuapp.com/',
       repo: 'https://github.com/KatyKedi/budget-tracker'
     },
-    // {
-    //   title: 'Apex Losers',
-    //   img: image5,
-    //   link: 'https://github.com/KatyKedi/apex-losers',
-    //   repo: 'https://github.com/KatyKedi/apex-losers'
-    // },
+    {
+      title: 'Apex Losers',
+      img: image5,
+      link: 'https://github.com/KatyKedi/apex-losers',
+      repo: 'https://github.com/KatyKedi/apex-losers'
+    },
     {
       title: 'TFT Compare',
       img: image6,
