@@ -49,7 +49,7 @@ function Project() {
     return (
         <div id="projects">
             {projects.map((project, index) => (
-              <div class='project' key={index}>
+              <div id='project' key={index}>
                 <section>
                         <img 
                             src={project.img}
@@ -58,8 +58,8 @@ function Project() {
                             onClick={() =>  window.open(project.link)}
                             key={index}>
                         </img>
-                        <div class='project-text'>
-                          <a href={project.repo}>{project.title} Repo</a>
+                        <div>
+                          <a className='button' href={project.repo}>{project.title} Repo</a>
                         </div>
                 </section>
               </div>

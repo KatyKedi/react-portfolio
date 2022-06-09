@@ -9,22 +9,22 @@ function Nav(props) {
         <nav>
             <ul>
                 <li>
-                    <a href="#about" onClick={() => setPageSelected('about')}>
+                    <a className='button' href="#about" onClick={() => setPageSelected('about')}>
                         About me
                     </a>
                 </li>
                 <li>
-                    <a href="#portfolio" onClick={() => setPageSelected('portfolio')}>
+                    <a className='button' href="#portfolio" onClick={() => setPageSelected('portfolio')}>
                         Portfolio
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" onClick={() => setPageSelected('contact')}>
+                    <a className='button' href="#contact" onClick={() => setPageSelected('contact')}>
                         Contact Me
                     </a>
                 </li>
                 <li>
-                    <a href="#resume" onClick={() => setPageSelected('resume')}>
+                    <a className='button' href="#resume" onClick={() => setPageSelected('resume')}>
                         Resume
                     </a>
                 </li>

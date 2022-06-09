@@ -12,7 +12,7 @@ function Header(props) {
                 setPageSelected={setPageSelected}
             ></Nav>
             <div id='profile'>
-                <h1>Katy Vincent</h1>
+                <h1 id="title">Katy Vincent</h1>
                 <img src={avatar} alt='avatar'></img>
             </div>
         </header>
