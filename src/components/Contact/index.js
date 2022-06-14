@@ -24,14 +24,14 @@ function Contact() {
         }
         } else {
         if (!e.target.value.length) {
-            setErrorMessage(`${e.target.name} is required.`);
+            setErrorMessage(`A ${e.target.name} is required.`);
         } else {
             setErrorMessage('');
         }
         }
         if (!errorMessage) {
-        setFormState({ ...formState, [e.target.name]: e.target.value });
-        console.log('Handle Form', formState);
+          setFormState({ ...formState, [e.target.name]: e.target.value });
+          console.log('Handle Form', formState);
         }
     };
     

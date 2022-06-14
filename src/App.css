@@ -21,7 +21,6 @@ li {
     font-weight: 700;
     justify-content: center;
     line-height: 1;
-    margin: 0;
     outline: none;
     padding: .4rem 1rem;
     margin: .2rem;
@@ -60,12 +59,20 @@ nav ul {
     display: flex;
 }
 
+#about-ps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 #about p {
     text-align: left;
     margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 /* Projects */
+
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -84,30 +91,21 @@ img {
 
 /* Contact */
 
-#contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#contact-form {
-    max-width: 320px;
-
-}
-
 .input-prompt {
     display: flex;
-    justify-content: space-between;
-    margin: 2%;
-}
-
-.label {
-    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0;
 }
 
 /* Resume */
 
+.resume-section {
+    font-style: italic;
+}
+
 .resume-li {
+    font-style: normal;
     display: flex;
     margin: 5% 0;
 }
@@ -137,4 +135,65 @@ img {
 
 footer ul {
     margin: 5% 0;
+}
+
+/* Media Queries */
+
+
+
+@media screen and (min-width: 768px) {
+
+    #title {
+        font-size: 3rem;
+        margin: 2% 0;
+    }
+
+    .page-div h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 980px) {
+
+    #title {
+        font-size: 4rem;
+        margin: 4% 0;
+    }
+
+    .page-div h2 {
+        font-size: 2.2rem;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+    }
+
+    /* About Me */
+
+    #about p {
+        font-size: 1.4rem;
+    }
+
+    /* Contact */
+
+    #contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contact-form {
+        margin: 0 3%;
+        font-size: 1.8rem;
+    }
+
+    /* Resume */
+
+    #resume-content {
+        margin: 5% 20% 0 20%;
+        font-size: 1.4rem;
+    }
 }
