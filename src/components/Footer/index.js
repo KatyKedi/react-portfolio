@@ -1,12 +1,14 @@
 import React from 'react';
+import { Button } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Footer() {
     return (
-        <footer>
+        <footer className='text-light'>
             <h2>Professional Profiles</h2>
             <ul>
-                <li>Github: <a className='button' href="https://github.com/KatyKedi" target='_blank'>KatyKedi</a></li>
-                <li>LinkedIn: <a className='button' href="https://www.linkedin.com/in/katy-vincent-95a7351a7/" target="_blank">Katy Vincent</a></li>
+                <li>Github: <Button href="https://github.com/KatyKedi" target='_blank'>KatyKedi</Button></li>
+                <li>LinkedIn: <Button href="https://www.linkedin.com/in/katy-vincent-95a7351a7/" target="_blank">Katy Vincent</Button></li>
             </ul>
         </footer>
     );
