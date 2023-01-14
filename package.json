@@ -35,6 +35,7 @@
     "gh-pages": "^3.2.3"
   },
   "dependencies": {
+    "@cyntler/react-doc-viewer": "^1.10.3",
     "bootstrap": "^5.2.2",
     "react": "^18.1.0",
     "react-bootstrap": "^2.5.0",

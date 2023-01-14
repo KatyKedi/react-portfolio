@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Card, Button } from 'react-bootstrap'
 import image1 from '../../assets/code-quiz.png';
 import image2 from '../../assets/workday-scheduler.png';
 import image3 from '../../assets/note-taker.png';
@@ -47,24 +48,23 @@ const projects = [
 
 function Project() {
     return (
-        <div id="projects">
-            {projects.map((project, index) => (
-              <div id='project' key={index}>
-                <section>
-                        <img 
-                            src={project.img}
-                            alt={project.title + ' image'}
-                            className='img-thumbnail'
-                            onClick={() =>  window.open(project.link)}
-                            key={index}>
-                        </img>
-                        <div>
-                          <a className='button' href={project.repo}>{project.title} Repo</a>
-                        </div>
-                </section>
-              </div>
-            ))}
-        </div>
+      <>
+        {projects.map((project, index) => (
+          <Col lg={4} md={6} className='my-2' key={index}>
+            <Card>
+              <Card.Img 
+                variant="top" 
+                src={project.img}
+                alt={project.title + ' image'}
+                onClick={() =>  window.open(project.link)}
+                key={index}
+              >
+              </Card.Img>
+              <Button variant="primary" href={project.repo} target="_blank">{project.title} Repo</Button>
+            </Card>
+          </Col>
+        ))}
+      </>
     )
 }
 

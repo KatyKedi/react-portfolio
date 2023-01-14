@@ -10,21 +10,19 @@ import Resume from './components/Resume';
 
 function App() {
   const [pageSelected, setPageSelected] = useState('about');
-  
+
   return (
     <>
-    <div class='light x1'></div>
-    <div class='light x2'></div>
-    <div class='light x3'></div>
-    <div class='light x4'></div>
-    <div class='light x5'></div>
-    <div class='light x6'></div>
-    <div class='light x7'></div>
-    <div class='light x8'></div>
-    <div class='light x9'></div>
-      <Navigation
-        setPageSelected={setPageSelected}
-      ></Navigation>
+      <div class='light x1'></div>
+      <div class='light x2'></div>
+      <div class='light x3'></div>
+      <div class='light x4'></div>
+      <div class='light x5'></div>
+      <div class='light x6'></div>
+      <div class='light x7'></div>
+      <div class='light x8'></div>
+      <div class='light x9'></div>
+      <Navigation setPageSelected={setPageSelected} />
       <main className='text-dark'>
         {(pageSelected === 'about') && (
           <Container id='about'>
@@ -37,22 +35,24 @@ function App() {
           </Container>
         )}
         {(pageSelected === 'portfolio') && (
-            <Container id='portfolio'>
-              <Row>Portfolio</Row>
+          <Container id='portfolio'>
+            <Row>Portfolio</Row>
+            <Row>
               <Project></Project>
-            </Container>
+            </Row>
+          </Container>
         )}
         {(pageSelected === 'contact') && (
-          <div className='row' id='contact'>
-            <h2>Contact Me</h2>
+          <Container id='contact'>
+            <Row>Contact Me</Row>
             <Contact></Contact>
-          </div>
+          </Container>
         )}
         {(pageSelected === 'resume') && (
-          <div className='row' id='resume'>
-              <h2>Resume</h2>
-              <Resume></Resume>
-          </div>
+          <Container id='resume'>
+            <Row>Resume</Row>
+            <Resume></Resume>
+          </Container>
         )}
       </main>
       <Footer></Footer>

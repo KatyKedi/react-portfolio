@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import avatar from '../../assets/avatar.png';
 
@@ -10,7 +10,6 @@ function Navigation(props) {
 
     return (
         <Navbar expand="lg">
-            <Container>
                 <Navbar.Brand className='text-light' id='name-title' href="#about" onClick={() => setPageSelected('about')}>
                     <img 
                     width='80'
@@ -42,7 +41,6 @@ function Navigation(props) {
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
-            </Container>
         </Navbar>
     );
 }
