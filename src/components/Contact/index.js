@@ -7,13 +7,38 @@ function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const { name, email, message } = valid;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // const data = {
+    //   service_id: 'default_service',
+    //   template_id: 'template_7pk7srz',
+    //   user_id: 'ggYzov0u5hQRvZaii',
+    //   template_params: {
+    //     'name': formState.name,
+    //     'email': formState.email,
+    //     'message': formState.message
+    //   }
+    // };
+
+    // const template_params = {
+    //       'name': formState.name,
+    //       'email': formState.email,
+    //       'message': formState.message
+    //     }
+
+    // const dataStr = `service_id=default_service&template_id=template_7pk7srz&user_id=ggYzov0u5hQRvZaii`
+    // const response = await fetch(`https://api.emailjs.com/api/v1.0/email/send?${dataStr}`, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    // })
+    // console.log(response)
   };
 
   const handleChange = (e) => {
-    const targetIsEmail = (e.target.id === 'email') ? true : false    
+    const targetIsEmail = (e.target.id === 'email') ? true : false
     if (e.target.value.length) {
       targetIsEmail ? setValid({ ...valid, email: validateEmail(e.target.value) }) : setValid({ ...valid, [e.target.id]: true });
       setFormState({ ...formState, [e.target.id]: e.target.value });
