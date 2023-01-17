@@ -10,6 +10,6 @@
     outline: 2px solid white;
 }
 
-#about-me {
-    background-color: rgba(255, 255, 255, 0.8)
+.about-ps {
+    text-align: left;
 }
