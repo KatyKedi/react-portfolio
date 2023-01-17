@@ -1,29 +1,34 @@
 import React, { useState, useRef } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { validateEmail } from '../../utils/helpers';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [valid, setValid] = useState({ name: false, email: false, message: false })
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const { name, email, message } = valid;
+  const [alert, setAlert] = useState(null)
   const form = useRef();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (name && email && message) {
     emailjs.sendForm('service_tct4jgi', 'template_7pk7srz', form.current, 'ggYzov0u5hQRvZaii')
       .then((result) => {
-          console.log(result.text);
+        setAlert('success')
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
+    } else {
+      setAlert('failure')
+    }
   };
 
   const handleChange = (e) => {
     const targetIsEmail = (e.target.id === 'email') ? true : false
     if (e.target.value.length) {
       targetIsEmail ? setValid({ ...valid, email: validateEmail(e.target.value) }) : setValid({ ...valid, [e.target.id]: true });
-      setFormState({ ...formState, [e.target.id]: e.target.value });
     } else {
       setValid({ ...valid, [e.target.id]: false })
     }
@@ -51,6 +56,16 @@ function Contact() {
             </Form.Group>
             <Button className='text-light' type="submit">Submit</Button>
           </Form>
+          {alert === 'success' && (
+            <Alert className='my-3' variant='success'>
+            Message sent. Thanks for reaching out!
+          </Alert>
+          )}
+          {alert === 'failure' && (
+            <Alert className='my-3' variant='danger'>
+            Message not sent, email provided is invalid!
+          </Alert>
+          )}        
         </Col>
       </Row>
     </Container>
