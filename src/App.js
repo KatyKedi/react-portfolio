@@ -23,7 +23,7 @@ function App() {
       <div class='light x8'></div>
       <div class='light x9'></div>
       <Navigation pageSelected={pageSelected} setPageSelected={setPageSelected} />
-      <main className='text-dark'>
+      <main>
         {(pageSelected === 'about') && (<About></About>)}
         {(pageSelected === 'portfolio') && (<Project></Project>)}
         {(pageSelected === 'contact') && (<Contact></Contact>)}
