@@ -13,3 +13,7 @@
 .about-ps {
     text-align: left;
 }
+
+.icon-links:hover {
+    color: white !important;
+}
