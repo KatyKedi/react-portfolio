@@ -15,6 +15,7 @@ function Contact() {
     if (name && email && message) {
     emailjs.sendForm('service_tct4jgi', 'template_7pk7srz', form.current, 'ggYzov0u5hQRvZaii')
       .then((result) => {
+        document.getElementById("form").reset()
         setAlert('success')
         console.log(result.text);
       }, (error) => {
@@ -38,7 +39,7 @@ function Contact() {
     <Container>
       <Row className='justify-content-center'>
         <Col sm={12} md={6} lg={4}>
-          <Form ref={form} className='text-light' onSubmit={handleSubmit}>
+          <Form id='form' ref={form} className='text-light' onSubmit={handleSubmit}>
             <Form.Group onChange={handleChange} className="mb-3" controlId="name">
               <Form.Label>Name</Form.Label>
               <Form.Control required isInvalid={!name} name='name' placeholder="Enter your name here" />
