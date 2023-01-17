@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../scss/custom.scss';
@@ -9,10 +9,6 @@ function Navigation(props) {
         pageSelected,
         setPageSelected
     } = props;
-
-    useEffect(() => {
-        document.querySelector(`#${pageSelected}`).classList.add('bg-primary')
-    }, [pageSelected])
 
     return (
         <Navbar className='mx-3' collapseOnSelect expand="lg">
@@ -29,22 +25,22 @@ function Navigation(props) {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav>
                     <Nav.Item>
-                        <Nav.Link id='about' className='rounded big-link text-light' href="#about" onClick={() => setPageSelected('about')}>
+                        <Nav.Link id='about' className={`${pageSelected === 'about' && "bg-primary"} rounded big-link text-light`} href="#about" onClick={() => setPageSelected('about')}>
                             About me
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link id='portfolio' className='rounded big-link text-light' href="#portfolio" onClick={() => setPageSelected('portfolio')}>
+                        <Nav.Link id='portfolio' className={`${pageSelected === 'portfolio' && "bg-primary"} rounded big-link text-light`} href="#portfolio" onClick={() => setPageSelected('portfolio')}>
                             Portfolio
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link id='contact' className='rounded big-link text-light' href="#contact" onClick={() => setPageSelected('contact')}>
+                        <Nav.Link id='contact' className={`${pageSelected === 'contact' && "bg-primary"} rounded big-link text-light`} href="#contact" onClick={() => setPageSelected('contact')}>
                             Contact Me
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link id='resume' className='rounded big-link text-light' href="#resume" onClick={() => setPageSelected('resume')}>
+                        <Nav.Link id='resume' className={`${pageSelected === 'resume' && "bg-primary"} rounded big-link text-light`} href="#resume" onClick={() => setPageSelected('resume')}>
                             Resume
                         </Nav.Link>
                     </Nav.Item>

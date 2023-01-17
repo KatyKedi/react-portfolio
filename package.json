@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@cyntler/react-doc-viewer": "^1.10.3",
+    "@emailjs/browser": "^3.10.0",
     "bootstrap": "^5.2.2",
     "react": "^18.1.0",
     "react-bootstrap": "^2.5.0",

@@ -11,6 +11,10 @@ import About from './components/About'
 function App() {
   const [pageSelected, setPageSelected] = useState('about');
 
+  useEffect(() => {
+    const page = window.location.href.split("#")[1]
+    page && setPageSelected(page)
+  }, [])
   return (
     <>
       <div class='light x1'></div>
