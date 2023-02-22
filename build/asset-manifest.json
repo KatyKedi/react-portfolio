@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.8bf8e145.css",
-    "main.js": "/react-portfolio/static/js/main.f348bfb4.js",
+    "main.css": "/react-portfolio/static/css/main.2e3edd88.css",
+    "main.js": "/react-portfolio/static/js/main.aac81e75.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/tft-compare.png": "/react-portfolio/static/media/tft-compare.225cdc0bfaceeeab899f.png",
     "static/media/apex-losers.png": "/react-portfolio/static/media/apex-losers.851361e603cc87a958ad.png",
@@ -12,12 +12,12 @@
     "static/media/code-quiz.png": "/react-portfolio/static/media/code-quiz.bc2d4b72c226caf7b1ec.png",
     "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.ac1a024290357e514ca6.png",
     "index.html": "/react-portfolio/index.html",
-    "main.8bf8e145.css.map": "/react-portfolio/static/css/main.8bf8e145.css.map",
-    "main.f348bfb4.js.map": "/react-portfolio/static/js/main.f348bfb4.js.map",
+    "main.2e3edd88.css.map": "/react-portfolio/static/css/main.2e3edd88.css.map",
+    "main.aac81e75.js.map": "/react-portfolio/static/js/main.aac81e75.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bf8e145.css",
-    "static/js/main.f348bfb4.js"
+    "static/css/main.2e3edd88.css",
+    "static/js/main.aac81e75.js"
   ]
 }

@@ -22,34 +22,34 @@ const projects = [
     link: 'https://katykedi.github.io/workday-scheduler/',
     repo: 'https://github.com/KatyKedi/workday-scheduler'
   },
-  {
-    title: 'Note Taker',
-    img: image3,
-    description: 'An app that lets you take a quiz to test your coding knowledge.',
-    link: 'https://note-taker-katykedi.herokuapp.com/',
-    repo: 'https://github.com/KatyKedi/note-taker'
-  },
-  {
-    title: 'Budget Tracker',
-    img: image4,
-    description: 'An app that lets you take a quiz to test your coding knowledge.',
-    link: 'https://budget-tracker-katykedi.herokuapp.com/',
-    repo: 'https://github.com/KatyKedi/budget-tracker'
-  },
-  {
-    title: 'Apex Losers',
-    img: image5,
-    description: 'An app that lets you take a quiz to test your coding knowledge.',
-    link: 'https://github.com/KatyKedi/apex-losers',
-    repo: 'https://github.com/KatyKedi/apex-losers'
-  },
-  {
-    title: 'TFT Compare',
-    img: image6,
-    description: 'An app that lets you take a quiz to test your coding knowledge.',
-    link: 'https://tft-compare.herokuapp.com/',
-    repo: 'https://github.com/Atweaver7/tft-compare'
-  }
+  // {
+  //   title: 'Note Taker',
+  //   img: image3,
+  //   description: 'An app that lets you take a quiz to test your coding knowledge.',
+  //   link: 'https://note-taker-katykedi.herokuapp.com/',
+  //   repo: 'https://github.com/KatyKedi/note-taker'
+  // },
+  // {
+  //   title: 'Budget Tracker',
+  //   img: image4,
+  //   description: 'An app that lets you take a quiz to test your coding knowledge.',
+  //   link: 'https://budget-tracker-katykedi.herokuapp.com/',
+  //   repo: 'https://github.com/KatyKedi/budget-tracker'
+  // },
+  // {
+  //   title: 'Apex Losers',
+  //   img: image5,
+  //   description: 'An app that lets you take a quiz to test your coding knowledge.',
+  //   link: 'https://github.com/KatyKedi/apex-losers',
+  //   repo: 'https://github.com/KatyKedi/apex-losers'
+  // },
+  // {
+  //   title: 'TFT Compare',
+  //   img: image6,
+  //   description: 'An app that lets you take a quiz to test your coding knowledge.',
+  //   link: 'https://tft-compare.herokuapp.com/',
+  //   repo: 'https://github.com/Atweaver7/tft-compare'
+  // }
 ];
 
 function Project() {
