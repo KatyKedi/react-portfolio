@@ -20,7 +20,7 @@ function About() {
                 <Accordion.Item eventKey="2">
                     <Accordion.Header>Other Interests</Accordion.Header>
                     <Accordion.Body className='about-ps'>
-                        In my spare time, I am studying Turkish and Spanish to build on what I have learned of those languages in the past. I also had years of ASL experience in the past that I want to revisit to become fluent again. Please feel free to contact me if you are also learning these languages and would like a partner to practice with!
+                        In my spare time, I am studying ASL, Turkish and Spanish to build on what I have learned of those languages in the past. I also had years of ASL experience in the past that I want to revisit to become fluent again. Please feel free to contact me if you are also learning these languages and would like a partner to practice with!
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
