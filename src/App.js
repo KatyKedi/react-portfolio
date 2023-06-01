@@ -3,10 +3,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navigation from './components/Nav';
 import Footer from './components/Footer';
-import Project from './components/Project';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import About from './components/About'
+import Project from './pages/Project';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
+import About from './pages/About';
+import TechStack from './pages/TechStack';
+import Education from './pages/Education';
 
 function App() {
   const [pageSelected, setPageSelected] = useState('about');
@@ -29,6 +31,8 @@ function App() {
       <Navigation pageSelected={pageSelected} setPageSelected={setPageSelected} />
       <main>
         {(pageSelected === 'about') && (<About></About>)}
+        {(pageSelected === 'education') && (<Education></Education>)}
+        {(pageSelected === 'tech-stack') && (<TechStack></TechStack>)}
         {(pageSelected === 'portfolio') && (<Project></Project>)}
         {(pageSelected === 'contact') && (<Contact></Contact>)}
         {(pageSelected === 'resume') && (<Resume></Resume>)}
