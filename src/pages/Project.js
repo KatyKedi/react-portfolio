@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'Workday Scheduler',
     img: image2,
-    description: 'An app that lets you take a quiz to test your coding knowledge.',
+    description: 'An app that helps you track your schedule by the hour each day.',
     link: 'https://katykedi.github.io/workday-scheduler/',
     repo: 'https://github.com/KatyKedi/workday-scheduler'
   },
