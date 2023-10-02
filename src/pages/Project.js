@@ -53,7 +53,7 @@ const projects = [
 function Project() {
   return (
     <Container>
-      <Row>
+      <Row className="justify-content-center">
         {projects.map((project, index) => (
           <Col lg={4} md={6} className='my-2' key={index}>
             <Card>

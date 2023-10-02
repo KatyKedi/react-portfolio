@@ -17,12 +17,12 @@ function Education() {
             </a>
             <Card.Body>
               <Card.Title>Bachelor of Arts in Linguistics</Card.Title>
-              <Card.Text className='about-text'>I was involved in two research projects during my time at UCSB. The first project was centered around analyzing speech from a radio talk show, specifically during segments with guests. The program I used to transcribe chunks of audio data was ELAN, with my transcriptions including notes accounting for pauses, intonation, and other parts of speech. The second project I contributed to required me to transcribe works of a field linguist into the international phonetic alphabet, in order to preserve and standardize their work. Both projects were quintessential in building my skills in the field and gaining practical experience working in research.</Card.Text>
+              <Card.Text className='about-text'>I attended UC Santa Barbara where I earned a Bachelor’s degree in Linguistics. My preferred subjects in the field of Linguistics include morphology, syntax, semantics, and historical linguistics. However, I am also well-versed in phonology and phonetics. I was involved in two research projects during my time at UCSB. The first project was centered around analyzing speech from a radio talk show, specifically during segments with guests. The program I used to transcribe chunks of audio data was ELAN, with my transcriptions including notes accounting for pauses, intonation, and other parts of speech. The second project I contributed to required me to transcribe works of a field linguist into the international phonetic alphabet, in order to preserve and standardize their work. Both projects were quintessential in building my skills in the field and gaining practical experience working in research.</Card.Text>
             </Card.Body>
           </Card>
         </Col>
 
-        <Col sm={12} md={6}>
+        <Col sm={12} md={6} className='mt-2 mt-md-0'>
           <Card >
             <a href='https://www.ucdavis.edu/' target="_blank">
               <Card.Img variant='top' src={ucd} />
@@ -32,7 +32,7 @@ function Education() {
             </a>
             <Card.Body>
               <Card.Title>Certificate in Full Stack Web Development</Card.Title>
-              <Card.Text className='about-text'>My final project at UC Davis was an application that I collaborated on with a few other students. As the project leader, I was involved in every process previously listed. First, I presented the project idea to my teammates and wrote out a User Story. We came up with a wireframe together, designing the page layouts, colors, fonts, and user flow. Then, I used the GitHub projects feature to assign issues to each member of the team. I engineered the entire backend, including the server, schema, models, and seeds. Testing was also a large group effort, with every member testing every stage in the process. Finally, once the functional requirements were met, the application was deployed.</Card.Text>
+              <Card.Text className='about-text'>I attended UC Davis where I earned a Certificate in Full Stack Web Development. In web development, my passion lies in the backend, especially working with databases and relationships between data. That being said, I am a equally proficient and comfortable working in the frontend, making me a balanced and well-rounded Web Developer. My final project at UC Davis was an application that I collaborated on with a few other students. As the project leader, I was involved in every process previously listed. First, I presented the project idea to my teammates and wrote out a User Story. We came up with a wireframe together, designing the page layouts, colors, fonts, and user flow. Then, I used the GitHub projects feature to assign issues to each member of the team. I engineered the entire backend, including the server, schema, models, and seeds. Testing was also a large group effort, with every member testing every stage in the process. Finally, once the functional requirements were met, the application was deployed.</Card.Text>
             </Card.Body>
           </Card>
         </Col>

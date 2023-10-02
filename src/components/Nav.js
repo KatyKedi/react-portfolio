@@ -12,7 +12,12 @@ function Navigation(props) {
 
     return (
         <Navbar className='mx-3' collapseOnSelect expand="lg">
-            <Navbar.Brand className='text-light d-flex align-items-center flex-column flex-md-row' id='name-title'>
+            <Navbar.Brand
+                className='text-light d-flex align-items-center flex-column flex-md-row'
+                id='name-title'
+                href="#about"
+                onClick={() => setPageSelected('about')}
+            >
                 <img
                     width='70'
                     height='70'
