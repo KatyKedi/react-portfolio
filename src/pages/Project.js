@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import image1 from '../assets/images/projects/code-quiz.png';
 import image2 from '../assets/images/projects/workday-scheduler.png';
-import image3 from '../assets/images/projects/note-taker.png';
+import image3 from '../assets/images/projects/cryptoloops.png';
 import image4 from '../assets/images/projects/budget-tracker.png';
 
 const projects = [
@@ -20,13 +20,13 @@ const projects = [
     link: 'https://katykedi.github.io/workday-scheduler/',
     repo: 'https://github.com/KatyKedi/workday-scheduler'
   },
-  // {
-  //   title: 'Note Taker',
-  //   img: image3,
-  //   description: 'An app that lets you take a quiz to test your coding knowledge.',
-  //   link: 'https://note-taker-katykedi.herokuapp.com/',
-  //   repo: 'https://github.com/KatyKedi/note-taker'
-  // },
+  {
+    title: 'CryptoLoops',
+    img: image3,
+    description: 'A landing page for an application called Cryptoloops',
+    link: 'https://cryptoloops.netlify.app/',
+    repo: 'https://github.com/KatyKedi/note-taker'
+  },
   // {
   //   title: 'Budget Tracker',
   //   img: image4,
